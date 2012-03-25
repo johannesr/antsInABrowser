@@ -1,5 +1,5 @@
 
-This a ant farm based on Langton's ant rules which with a very simple set of rules create complicated emergent behavior.
+This is a ant farm based on Langton's ant rules which with a very simple set of rules create complicated emergent behavior.
 The players are represendted by a ant and their goal is to escape the farm.
 
 The rules of the game:
