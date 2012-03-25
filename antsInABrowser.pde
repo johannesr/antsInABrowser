@@ -19,13 +19,13 @@
  * 
  * Created 19 Mar 2012
  * By Johannes Rummelhoff
- * Modified 24 Mar 2012
+ * Modified 25 Mar 2012
  * By Johannes Rummelhoff
  *
  */
 
 
-int sqrSize = 20;
+int sqrSize = 5;
 int numColumns;
 int numRows;
 int turn;
@@ -44,10 +44,11 @@ void setup() {
   noStroke();
   smooth();
 
-  numColumns = width/sqrSize;
-  numRows = height/sqrSize;
+  numColumns = width / sqrSize;
+  numRows = height / sqrSize;
 
   ants = new ArrayList();
+  ants.add(new Ant(width / 2, height / 2));
 
   sqrColor = new color[numColumns][numRows];
   for (int rows = 0; rows < numRows; rows++) {
@@ -64,7 +65,11 @@ void draw() {
   // Count and print the turn number
   turn++;
   println("turn #" + turn);
-  saveFrame("ants-####.gif");
+ 
+  // Saves image of the canvas
+  // saveFrame("ants-####.gif");
+  
+  delay(200);
 
 
 }
